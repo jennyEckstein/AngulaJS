@@ -7,6 +7,21 @@
 
 	<body>
 		<p>Hello Angular</p>
+
+<!--ng-app Defines Angular JS application-->
+		<div ng-app="">
+		<!--ng-model binds value of HTML controls like input, select to app data-->
+			<p>Name: <input type="text" ng-model="name"></p>
+
+			<select ng-model="city">
+				<option>New York</option>
+				<option>Los Angeles</option>
+			</select>
+			<!--ng-bind binds app data to HTML view-->
+			<p ng-bind="name"></p>
+			<p ng-bind="city"></p>
+
+		</div>
 	</body>
 
 </html>
